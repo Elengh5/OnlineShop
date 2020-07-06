@@ -9,7 +9,7 @@
 
 }
 
-#button, #bt1{
+#button, #bt1,#sortBy{
 	background-color: #999282;
 }
 
@@ -27,4 +27,12 @@
 #help{
 	justify-content: space-around;
 	align-items: center;
+}
+
+#bk{
+	background-color: gray
+}
+
+#ford{
+	color: #4f313d;
 }
