@@ -38,7 +38,7 @@
           </select>
         </div>
         <button type="button" class="btn  col-md-2 col-lg-2 d-none d-md-block" id="button">
-      wishlist <span class="badge badge-light badge-light">5</span>
+      <a href="myorders.html" id="text"> wishlist </a> <span class="badge badge-light badge-light">5</span>
         </button>
         </div>
     </div>
@@ -64,8 +64,8 @@
                      <div class="dropdown-menu">
                         <a class="dropdown-item" data-toggle="modal" href="#LoginModal">Login</a>
                         <a class="dropdown-item" data-toggle="modal" href="#RegisterModal">Register</a>
-                        <a class="dropdown-item" href="#">My Orders</a>
-                        <a class="dropdown-item" href="#">Account Settings</a>
+                        <a class="dropdown-item" href="myorders.html">My Orders</a>
+                        <a class="dropdown-item" href="myaccount.html">Account Settings</a>
                       </div>
               </div>
   </div>
@@ -340,15 +340,13 @@
         </div>
     </div>
 <div class="row mt-3">
-            <div class="accordion w-100" >
+            <div class="accordion w-100" id="accordionExample">
                 <ul class="nav nav-tabs">
-                    <li class="nav-item" >
-                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                           aria-controls="collapseOne">Overview</a>
+                    <li class="nav-item" id="headingOne">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Overview</a>
                     </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                           aria-controls="collapseTwo">Rating</a>
+                    <li class="nav-item" id="headingTwo">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Rating</a>
                     </li>
                 </ul>
                 <div class="card">
@@ -390,9 +388,35 @@ Manual</li>
                         </div>
                     </div>
                 </div>
-                
             </div>
-        </div>
+             </div>
+            <div class="card">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <span class="w-25">1★</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">2★</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">3★</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">4★</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">5★</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
 <div class="row d-md-block d-none">
   <div class="d-flex justify-content-center">
       <h2 class="mx-auto pt-4" id="ford">Recomendations</h2>

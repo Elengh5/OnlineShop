@@ -37,7 +37,7 @@
           </select>
         </div>
         <button type="button" class="btn  col-md-2 col-lg-2 d-none d-md-block" id="button">
-      wishlist <span class="badge badge-light badge-light">5</span>
+      <a href="myorders.html" id="text"> wishlist </a><span class="badge badge-light badge-light">5</span>
         </button>
         </div>
     </div>
@@ -63,8 +63,8 @@
                      <div class="dropdown-menu">
                         <a class="dropdown-item" data-toggle="modal" href="#LoginModal">Login</a>
                         <a class="dropdown-item" data-toggle="modal" href="#RegisterModal">Register</a>
-                        <a class="dropdown-item" href="#">My Orders</a>
-                        <a class="dropdown-item" href="#">Account Settings</a>
+                        <a class="dropdown-item" href="myorders.html">My Orders</a>
+                        <a class="dropdown-item" href="myaccount.html">Account Settings</a>
                       </div>
               </div>
   </div>
@@ -273,11 +273,16 @@
 <!--Breadcrumb-->
 
 
+
+
+
 <!--Collapse-->
+
+
 <div class="row border-top">
-     <div class="col-12 d-md-block col-md-3 sidebar border-right border-left border-bottom mt-4 border-top text-decoration-none" id="secondrow">
+        <div class="d-none d-md-block col-md-3 sidebar bg-light border-right border-left border-bottom">
             <form>
-                <p class="pt-4 border-bottom">
+                <p>
                     <a class="text-muted text-uppercase text-decoration-none" data-toggle="collapse" href="#select" role="button"
                        aria-expanded="false" aria-controls="select11">
                         Choose category:
@@ -347,7 +352,7 @@
                         Choose shipment country:
                     </a>
                 </p>
-                 <div class="collapse bg-light p-2" id="select4">
+                <div class="collapse bg-light p-2" id="select4">
                     <div>
                         <input type="checkbox" id="Armenia">
                         <label class="text-dark text-uppercase" for="Armenia">Armenia</label>
@@ -361,6 +366,7 @@
                         <label class="text-dark text-uppercase" for="Georgia">Georgia</label>
                     </div>
                 </div>
+                
                 <div class="custom-control custom-switch">
                     <input type="checkbox" class="custom-control-input" id="Bid">
                     <label class="custom-control-label text-muted text-uppercase" for="Bid">Bid</label>
@@ -377,105 +383,151 @@
         </div>
 
 
-<!--Right Side Products-->
-<div class="col-12 col-md-9 main border-right border-left">
+      <!--Right Side roducts-->  
+        <div class="col-12 col-md-9 main border-right border-left">
             <div class="row justify-content-center">
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="product.html"><img class="w-100" src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-focus-se-sedan-angular-front.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h4 id="ford"><a href="product.html" class="text-decoration-none" id="ford"s>2015 Ford Focus</a>
+                            </h4>
+                            <ul class="d-none d-lg-block">
+                                <li>Class: Compact Passenger Car,</li>
+                                <li>Seeting: 5/5,</li>
+                                <li>Width: 71.8,</li>
+                                <li>Engine Type: Ethanol/Gas.</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">$7,072</div>
+                            <a href="cart.html" class="btn btn-primary ml-4">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="col-5 col-sm-5 col-md-5 product-card border p-2 mx-auto  mt-4">  
-  <a href="product.html"><img src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-focus-se-sedan-angular-front.png" class="card-img-top" alt="..."></a>
-  <div class="card-body">
-    <h5 class="card-title">2015 Ford Focus</h5>
-    <p class="card-text">Class: Compact Passenger Car, Seeting: 5/5, Width: 71.8, Engine Type: Ethanol/Gas, Transmission Speeds: 5.</p>
-  </div>
-  <div class="card-body justify-content-center">
-  <div class="display-4 align-items-center justify-content-center ">
-    <p>$7,072</p>
-  </div>
-        <button class="btn btn-primary w-100">Add To Cart</button>
-  </div>
-
-      </div>
-        <div class="col-5 col-sm-5 col-md-5 product-card border p-2 mx-auto  mt-4">  
-              <a href="product.html"><img src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">2015 Ford Fusion</h5>
-                <p class="card-text">Class: Passenger Car, Seeting: 5/5, Width: 75.2, Engine Type: Gas/Electric, Transmission Speeds: 0.</p>
-              </div>
-               <div class="card-body justify-content-center">
-              <div class="display-4 align-items-center justify-content-center ">
-                <p>$10,796</p>
-  </div>
-        <button class="btn btn-primary w-100">Add To Cart</button>
-  </div>
-    </div>
-
-    
-      </div>
-        <div class="col-5 col-sm-5 col-md-5 product-card border p-2 mx-auto  mt-4">  
-              <a href="product.html"><img src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">2015 Ford Fusion</h5>
-                <p class="card-text">Class: Passenger Car, Seeting: 5/5, Width: 75.2, Engine Type: Gas/Electric, Transmission Speeds: 0.</p>
-              </div>
-               <div class="card-body justify-content-center">
-              <div class="display-4 align-items-center justify-content-center ">
-                <p>$10,796</p>
-  </div>
-        <button class="btn btn-primary w-100">Add To Cart</button>
-  </div>
-    </div>
-    
-
-                
-      </div>
-        <div class="col-5 col-sm-5 col-md-5 product-card border p-2 mx-auto  mt-4">  
-              <a href="product.html"><img src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">2015 Ford Fusion</h5>
-                <p class="card-text">Class: Passenger Car, Seeting: 5/5, Width: 75.2, Engine Type: Gas/Electric, Transmission Speeds: 0.</p>
-              </div>
-               <div class="card-body justify-content-center">
-              <div class="display-4 align-items-center justify-content-center ">
-                <p>$10,796</p>
-  </div>
-        <button class="btn btn-primary w-100">Add To Cart</button>
-  </div>
-    </div>
-    
-        <div class="col-5 col-sm-5 col-md-5 product-card border p-2 mx-auto  mt-4">  
-              <a href="product.html"><img src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">2015 Ford Fusion</h5>
-                <p class="card-text">Class: Passenger Car, Seeting: 5/5, Width: 75.2, Engine Type: Gas/Electric, Transmission Speeds: 0.</p>
-              </div>
-               <div class="card-body justify-content-center">
-              <div class="display-4 align-items-center justify-content-center ">
-                <p>$10,796</p>
-  </div>
-        <button class="btn btn-primary w-100">Add To Cart</button>
-  </div>
-    </div>
-    
-                                
-      </div>
-        <div class="col-5 col-sm-5 col-md-5 product-card border p-2 mx-auto  mt-4">  
-              <a href="product.html"><img src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">2015 Ford Fusion</h5>
-                <p class="card-text">Class: Passenger Car, Seeting: 5/5, Width: 75.2, Engine Type: Gas/Electric, Transmission Speeds: 0.</p>
-              </div>
-               <div class="card-body justify-content-center">
-              <div class="display-4 align-items-center justify-content-center ">
-                <p>$10,796</p>
-  </div>
-        <button class="btn btn-primary w-100">Add To Cart</button>
-  </div>
-    </div>
-    
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                           <a href="product.html"><img class="w-100" src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" alt="">
+                           </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h4><a href="product.html" class="text-decoration-none" id="ford">2015 Ford Fusion</a>
+                            </h4>
+                            <ul class="d-none d-lg-block">
+                                <li>Class: Passenger Car,</li>
+                                <li>Seeting: 5/5,</li>
+                                <li>Width: 75.2,</li>
+                                <li>Engine Type: Gas/Electric.</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">$10,796</div>
+                            <a href="cart.html" class="btn btn-primary ml-4">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
 
 
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                           <a href="product.html"><img class="w-100" src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" alt="">
+                           </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h4><a href="product.html" class="text-decoration-none" id="ford">2015 Ford Fusion</a>
+                            </h4>
+                            <ul class="d-none d-lg-block">
+                                <li>Class: Passenger Car,</li>
+                                <li>Seeting: 5/5,</li>
+                                <li>Width: 75.2,</li>
+                                <li>Engine Type: Gas/Electric.</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">$10,796</div>
+                            <a href="cart.html" class="btn btn-primary ml-4">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
 
-                <nav class="col-12 mt-5">
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                           <a href="product.html"><img class="w-100" src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" alt="">
+                           </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h4><a href="product.html" class="text-decoration-none" id="ford">2015 Ford Fusion</a>
+                            </h4>
+                            <ul class="d-none d-lg-block">
+                                <li>Class: Passenger Car,</li>
+                                <li>Seeting: 5/5,</li>
+                                <li>Width: 75.2,</li>
+                                <li>Engine Type: Gas/Electric.</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">$10,796</div>
+                            <a href="cart.html" class="btn btn-primary ml-4">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                           <a href="product.html"><img class="w-100" src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" alt="">
+                           </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h4><a href="product.html" class="text-decoration-none" id="ford">2015 Ford Fusion</a>
+                            </h4>
+                            <ul class="d-none d-lg-block">
+                                <li>Class: Passenger Car,</li>
+                                <li>Seeting: 5/5,</li>
+                                <li>Width: 75.2,</li>
+                                <li>Engine Type: Gas/Electric.</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">$10,796</div>
+                            <a href="cart.html" class="btn btn-primary ml-4">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                           <a href="product.html"><img class="w-100" src="https://www.motortrend.com/uploads/sites/10/2015/11/2015-ford-fusion-energi-titanium-sedan-angular-front.png" alt="">
+                           </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h4><a href="product.html" class="text-decoration-none" id="ford">2015 Ford Fusion</a>
+                            </h4>
+                            <ul class="d-none d-lg-block">
+                                <li>Class: Passenger Car,</li>
+                                <li>Seeting: 5/5,</li>
+                                <li>Width: 75.2,</li>
+                                <li>Engine Type: Gas/Electric.</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">$10,796</div>
+                            <a href="cart.html" class="btn btn-primary ml-4">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <nav class="col-12 mt-2">
                     <ul class="pagination justify-content-center">
                         <li class="page-item">
                             <a class="page-link" href="shop.html">Previous</a>
@@ -488,10 +540,9 @@
                         </li>
                     </ul>
                 </nav>
-  </div>
-</div>
-
-
+            </div>
+        </div>
+    </div>
 
 
 
